@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="errors"></div>
+  <div id="loginScreen">
+    <form id="loginForm">
+      <label> <input name="email" placeholder="e-mail" /></label>
+      <label
+        > <input type="password" name="password" placeholder="senha"
+      /></label>
+      <button type="submit" id="loginButton">Entrar</button>
+    </form>
+  </div>
+  <div id="booksScreen">
+    <form id="bookForm">
+      <label>Título: <input name="title" type="text"/></label>
+      <label>ISBN: <input name="isbn" type="text"/></label>
+      <label
+        >Autor:
+        <select name="authorId"></select
+      ></label>
+      <label
+        >Ano de lançamento: <input name="publishingYear" type="number"
+      /></label>
+      <div>
+        <button type="button" id="deleteButton">Excluir</button>
+        <button type="button" id="cancelButton">Cancelar</button>
+        <button type="submit" id="saveButton">Cadastrar</button>
+      </div>
+    </form>
+    <ul></ul>
+  </div>
+
+  <script src="http.js"></script>
+  <script src="main.js"></script>
+</body>
